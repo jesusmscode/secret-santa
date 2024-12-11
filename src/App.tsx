@@ -1,8 +1,13 @@
 // src/App.tsx
+
 import { useState } from "react";
+// @ts-ignore
 import { ParticipantsList } from "./components/ParticipantsList";
+// @ts-ignore
 import { ParticipantForm } from "./components/ParticipantForm";
+// @ts-ignore
 import { performDraw } from "./utils/performDraw";
+// @ts-ignore
 import { sendEmails } from "./utils/emailHelper";
 
 interface Participant {

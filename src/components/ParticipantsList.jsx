@@ -1,3 +1,4 @@
+// @ts-ignore
 import { useState } from "react";
 import Select from "react-select";
 
@@ -30,21 +31,21 @@ export function ParticipantsList({ participants, addRestriction, restrictions })
         }),
         control: (provided) => ({
             ...provided,
-            borderColor:'green',
+            borderColor: 'green',
         }),
         menu: (provided) => ({
             ...provided,
-            backgroundColor:'green',
+            backgroundColor: 'green',
             color: 'white',
         }),
         option: (provided, state) => ({
             ...provided,
-            backgroundColor: state.isSelected ?'green' : 'white',
+            backgroundColor: state.isSelected ? 'green' : 'white',
             color: state.isSelected ? 'white' : 'black',
         }),
         dropdownIndicator: (provided) => ({
             ...provided,
-            color:'green',
+            color: 'green',
         }),
     };
     return (
